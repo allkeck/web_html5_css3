@@ -402,6 +402,12 @@ body {
   left: 0;
 }
 
+.socials-links-icons a:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  transform: translateY(-2px);
+  opacity: .75;
+}
+
 .social-skype::before {
   width: 24px;
   height: 26px;
