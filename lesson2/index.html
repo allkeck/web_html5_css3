@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Simple Template</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://kit.fontawesome.com/12368fc0e9.js" crossorigin="anonymous"></script>
+  <script src="js/fontawesome.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
           <li class="product-block_item">Associate the page with the payment system</li>
         </ul>
       </div>
-      <img src="./img/product_block/product.jpg" alt="product" class="product-block_image" width="469px" height="214px">
+      <img src="./img/product_block/product.jpg" alt="product" class="product-block_image" width="469" height="214">
     </div>
   </header>
   <!-- Основное содержание -->
@@ -43,8 +43,8 @@
             perferendis nemo debitis dolor.
           </p>
         </article>
-        <video src="/" class="about-product_video" poster="./img/about_product/video.jpg" width="430px"
-          height="245px"></video>
+        <video src="videos/1.mp4" loop controls class="about-product_video" poster="videos/posters/screen1.jpg" width="430"
+          height="245"></video>
       </div>
     </section>
     <!-- Второй блок -->
@@ -195,7 +195,7 @@
               <li class="buy-it-now__block-list-item">Cum odio, iste quia doloribus autem;</li>
               <li class="buy-it-now__block-list-item">Aperiam nulla ea neque.</li>
             </ol>
-            <button class="buy-it-now__block-btn">BUY</button>
+            <button class="buy-it-now__block-btn">buy</button>
           </div>
           <div class="buy-it-now__block">
             <h3 class="buy-it-now__block-header">Premium</h3>
@@ -210,7 +210,7 @@
               <li class="buy-it-now__block-list-item">Cum odio, iste quia doloribus autem;</li>
               <li class="buy-it-now__block-list-item">Aperiam nulla ea neque.</li>
             </ol>
-            <button class="buy-it-now__block-btn">BUY</button>
+            <button class="buy-it-now__block-btn">buy</button>
           </div>
           <div class="buy-it-now__block">
             <h3 class="buy-it-now__block-header">Lux</h3>
@@ -229,7 +229,7 @@
               <li class="buy-it-now__block-list-item">Cum odio, iste quia doloribus autem;</li>
               <li class="buy-it-now__block-list-item">Aperiam nulla ea neque.</li>
             </ol>
-            <button class="buy-it-now__block-btn">BUY</button>
+            <button class="buy-it-now__block-btn">buy</button>
           </div>
         </div>
       </div>
@@ -241,12 +241,12 @@
       <div class="container">
         <h2 class="contacts__header">Contacts</h2>
         <div class="space-flex">
-          <div class="contacts__inputs">
+          <form class="contacts__inputs">
             <input type="text" class="input-name" placeholder="Your name:">
             <input type="email" class="input-email" placeholder="Your email:">
             <textarea name="massege" cols="30" rows="10" class="input-message" placeholder="Your message:"></textarea>
             <input type="submit" class="input-send" value="Send">
-          </div>
+          </form>
           <div class="contacts__socials">
             <span class="social-skype">here_your_login_skype</span>
             <span class="social-icq">279679659</span>

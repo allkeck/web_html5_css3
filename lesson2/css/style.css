@@ -63,15 +63,22 @@ body {
 
 .about-product_info-description {
   width: 655px;
+  margin: 0;
   color: #333;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
-.about-product_info .about-product_info-description:nth-child(2) {
-  margin-bottom: 20px;
+.about-product_info-description:nth-child(2) {
+  margin: 0 0 20px 0;
+}
+
+.about-product_video {
+  outline: none;
 }
 
 .dignity-block {
@@ -188,6 +195,7 @@ body {
   margin: 0 0 25px 0;
   padding: 0 0 0 100px;
   background: url(../img/reviews/avatar.png) left top no-repeat;
+  background-size: 75px;
 }
 
 .reviews__text {
@@ -305,12 +313,19 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 }
 
 .buy-it-now__block-btn:hover {
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+
+.buy-it-now__block-btn:active {
+  background-color: #fff;
+  border: 2px solid transparent;
+  color: #445161;
 }
 
 .contacts {
@@ -348,6 +363,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  outline: none;
 }
 
 .contacts__inputs .input-name,
@@ -371,12 +387,19 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 }
 
 .contacts__inputs .input-send:hover {
   color: #fff;
   background-color: transparent;
   border-color: #fff;
+}
+
+.contacts__inputs .input-send:active {
+  border: 2px solid transparent;
+  color: #445162;
+  background-color: #fff;
 }
 
 .contacts__socials {
@@ -458,7 +481,7 @@ body {
 }
 
 .copyright {
-  padding: 10px 0px 5px;
+  padding: 8px 0px 5px;
   text-align: center;
 }
 
