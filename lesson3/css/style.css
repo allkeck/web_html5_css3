@@ -196,31 +196,32 @@ body {
   opacity: 1;
 }
 
-.fa-arrow-left,
-.fa-arrow-right {
+.arrows-controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   position: absolute;
   bottom: 50%;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
   color: #fff;
   font-size: 100px;
   cursor: pointer;
 }
 
-.fa-arrow-left {
-  left: -180px;
-}
-
-.fa-arrow-right {
-  right: -180px;
-}
-
 .fa-arrow-left:hover,
 .fa-arrow-right:hover {
-  font-size: 110px;
+  transform: scale(1.1);
   opacity: .8;
 }
 
 .fa-arrow-left:active,
 .fa-arrow-right:active {
+  transform: scale(1);
   font-size: 100px;
   opacity: 1;
 }
@@ -442,11 +443,12 @@ body {
 .projects__gallery-menu-item {
   height: 32px;
   padding: 0 20px;
+  background-color: transparent;
   border: 1px solid #ebebeb;
   border-radius: 3px;
   box-sizing: border-box;
-  line-height: 2.2;
   color: #8c8c8c;
+  outline: none;
   cursor: pointer;
 }
 
@@ -456,13 +458,11 @@ body {
 
 .projects__gallery-menu-item:hover {
   box-shadow: 0 0 2px 0 #8c8c8c;
-  line-height: 2;
 }
 
 .projects__gallery-menu-item:active {
   border: 1px solid #ebebeb;
   color: #8c8c8c;
-  background-color: transparent;
   line-height: 2.4;
 }
 
@@ -540,6 +540,7 @@ body {
 }
 
 .gallery-item__title {
+  display: block;
   margin: 0 0 0 25px;
   color: #c7b299;
   font-family: "Raleway", sans-serif;
@@ -663,6 +664,11 @@ body {
   background-color: #fbfaf8;
 }
 
+.device__img {
+  width: 100%;
+  margin: 0 30px 0 0;
+}
+
 .device__header {
   margin: 0;
   color: #555;
@@ -686,7 +692,7 @@ body {
 }
 
 .device__list-item {
-  margin: 20px 0 0;
+  margin: 15px 0 0;
   padding: 0 0 0 50px;
   position: relative;
   color: #8c8c8c;
@@ -706,4 +712,46 @@ body {
   position: absolute;
   left: 0;
   top: 4px;
+}
+
+.statistics {
+  padding: 70px 0 60px;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.statistics__item {
+  text-align: center;
+}
+
+.statistics__item span {
+  display: block;
+  margin: 30px 0 0 0;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 36px;
+}
+
+.statistics__item .statistics__text {
+  margin: 20px 0 0 0;
+  position: relative;
+  color: #c7b299;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.statistics__text::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 0 0 0 -15px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
 }
