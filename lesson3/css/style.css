@@ -27,7 +27,6 @@ body {
 .header__logo {
   display: flex;
   align-items: center;
-  padding: 8px 0 8px 65px;
   font-family: "Raleway", sans-serif;
   font-size: 34px;
   font-weight: 400;
@@ -76,19 +75,19 @@ body {
   color: #fff;
 }
 
-.fa-shopping-basket,
+.fa-shopping-bag,
 .fa-search {
   color: #fff;
   cursor: pointer;
 }
 
-.fa-shopping-basket:hover,
+.fa-shopping-bag:hover,
 .fa-search:hover {
   color: #aaa;
   opacity: .7;
 }
 
-.fa-shopping-basket:active,
+.fa-shopping-bag:active,
 .fa-search:active {
   color: #fff;
   opacity: 1;
@@ -199,28 +198,28 @@ body {
 .arrows-controls {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  width: 1620px;
+  margin: 0 0 0 -810px;
   position: absolute;
   bottom: 50%;
+  left: 50%;
 }
 
-.fa-arrow-left,
-.fa-arrow-right {
+.fa-chevron-left,
+.fa-chevron-right {
   color: #fff;
   font-size: 100px;
   cursor: pointer;
 }
 
-.fa-arrow-left:hover,
-.fa-arrow-right:hover {
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
   transform: scale(1.1);
   opacity: .8;
 }
 
-.fa-arrow-left:active,
-.fa-arrow-right:active {
+.fa-chevron-left:active,
+.fa-chevron-right:active {
   transform: scale(1);
   font-size: 100px;
   opacity: 1;
@@ -457,13 +456,12 @@ body {
 }
 
 .projects__gallery-menu-item:hover {
+  line-height: 2;
   box-shadow: 0 0 2px 0 #8c8c8c;
 }
 
 .projects__gallery-menu-item:active {
-  border: 1px solid #ebebeb;
-  color: #8c8c8c;
-  line-height: 2.4;
+  line-height: 2.5;
 }
 
 .projects__gallery-item {
@@ -786,7 +784,6 @@ body {
 
 .posts__item {
   max-width: 370px;
-  padding: 0 0 25px 0;
   border: 1px solid #f8f8f8;
   position: relative;
 }
@@ -823,39 +820,41 @@ body {
   line-height: 20px;
 }
 
-.posts__item img {
+.posts__img-wrap {
+  line-height: 0;
   cursor: pointer;
 }
 
-.posts__item img:hover {
+.posts__item .posts__img-wrap:hover {
   filter: brightness(.5);
 }
 
-.posts__item img:hover + .posts__item-header {
-  color: #c7b299;
-  background-color: #362f2d; 
-}
-
-.posts__item img:hover ~ .posts__item-text {
-  color: #fff;
+.posts__item .posts__img-wrap:hover + .posts__item-wrap {
   background-color: #362f2d;
 }
 
-.posts__item img:hover ~ .posts__date .posts__date-day {
+.posts__item .posts__img-wrap:hover + .posts__item-wrap .posts__item-header {
+  color: #c7b299;
+}
+
+.posts__item .posts__img-wrap:hover + .posts__item-wrap .posts__item-text {
+  color: #fff;
+}
+
+.posts__item .posts__img-wrap:hover ~ .posts__date .posts__date-day {
   background-color: #c7b299;
 }
 
-.posts__item img:hover ~ .posts__date .posts__date-mounth {
+.posts__item .posts__img-wrap:hover ~ .posts__date .posts__date-mounth {
   background-color: #a48d72;
 }
 
-.posts__item span,
-.posts__item a {
-  display: block;
+.posts__item-wrap {
+  padding: 25px 0 25px 30px;
 }
 
 .posts__item-header {
-  margin: 25px 0 0 30px;
+  margin: 0;
   color: #555;
   font-family: "Raleway";
   font-size: 20px;
@@ -863,7 +862,7 @@ body {
 }
 
 .posts__item-text {
-  margin: 15px 0 0 30px;
+  margin: 15px 0 0;
   color: #8c8c8c;
   font-family: "Montserrat";
   font-size: 14px;
@@ -872,7 +871,8 @@ body {
 }
 
 .posts__item-link {
-  margin: 20px 0 0 30px;
+  display: block;
+  margin: 20px 0 0;
   color: #c7b299;
   font-family: "Montserrat";
   font-size: 14px;
@@ -901,7 +901,7 @@ body {
 .posts__item-link::after {
   content: "▶";
   display: inline-block;
-  height: 24px;
+  height: 26px;
   margin: 0 0 0 8px;
   transform: scaleY(1.5);
 }
@@ -911,19 +911,23 @@ body {
   text-align: center;
 }
 
-.fa-arrow-circle-o-left,
-.fa-arrow-circle-o-right {
+.fa-chevron-circle-left {
+  margin: 0 6px 0 0;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right{
   color: #d1d1d1;
   font-size: 36px;
   cursor: pointer;
 }
 
-.fa-arrow-circle-o-left:hover,
-.fa-arrow-circle-o-right:hover {
+.fa-chevron-circle-left:hover,
+.fa-chevron-circle-right:hover {
   color: #c7b299;
 }
 
-.fa-arrow-circle-o-left:active,
-.fa-arrow-circle-o-right:active {
+.fa-chevron-circle-left:active,
+.fa-chevron-circle-right:active {
   color: #d1d1d1;
 }
